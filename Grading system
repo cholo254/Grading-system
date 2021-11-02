@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+
+int main(){
+	int grade;
+	string name;
+	
+	cout<<"Please write your name: "<<endl;
+	cin>>name;
+	cout<<"Please write your grade: "<<endl;
+	cin>>grade;
+	
+	if(grade>=70){
+		cout<<"You "<<name<<"has an A"<<endl;
+	}
+	else if(grade>60 && grade<69){
+		cout<<"You "<<name<<"has a B"<<endl;
+	}
+	else if(grade>50 &&grade<59){
+		cout<<"You "<<name<<"has a C"<<endl;
+	}
+	else if(grade>40 &&grade<49){
+		cout<<"You "<<name<<"has a D"<<endl;
+	}
+	else{
+		cout<<"You "<<name<<"have an F"<<endl;
+	}
+	return 0;
+}
